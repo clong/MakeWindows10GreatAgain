@@ -26,6 +26,7 @@ cd MakeWindows10GreatAgain
 Set-ExecutionPolicy Restricted
 ```
 
+## Notes
 I considered adding some tweaks to remove the default apps/tiles that come installed with the Win10 start menu, but I've been pleasantly surprised by [Classic Shell](http://classicshell.net/). It's an excellent start menu replacement for Win10. I recommend just installing that.
 
 This script doesn't address any of the privacy issues of Windows 10 because there are already a [bunch of tools](http://www.ghacks.net/2015/08/14/comparison-of-windows-10-privacy-tools/) that already do that.
