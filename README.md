@@ -10,10 +10,12 @@ Here's what this script does:
 5. Shows file extensions for known file types
 6. Sets Explorer to open to "This PC"
 7. Shows hidden files (not including OS files)
-8. Disables inline ads/notifications for OneDrive
+8. Uninstalls OneDrive
 9. Shows "This PC" icon on Desktop
 10. Enables developer mode (required for Linux Subsystem)
 11. Installs the Linux Subsystem
+12. Updates the Powershell Get-Help items
+13. Disables SMBv1
 
 ## Installation
 Unfortunately you'll have to set your execution policy to unrestricted to use this script.
