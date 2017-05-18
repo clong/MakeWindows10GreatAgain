@@ -8,6 +8,16 @@ if ([System.Environment]::OSVersion.Version.Build -lt 14393) {
 Write-Host "Importing registry keys..."
 regedit /s MakeWindows10GreatAgain.reg
 
+# Install Powershell Help items
+Update-Help
+
+# Remove OneDrive from the System
+taskkill /f /im OneDrive.exe
+%SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall
+
+# Disable SMBv1
+Set-SmbServerConfiguration -EnableSMB1Protocol $false -Confirm:$false
+
 # Install Linux Subsystem
 Write-Host "Installing the Linux Subsystem..."
 Enable-WindowsOptionalFeature -Online -FeatureName "Microsoft-Windows-Subsystem-Linux"
