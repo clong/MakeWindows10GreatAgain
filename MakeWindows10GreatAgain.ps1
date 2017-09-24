@@ -13,7 +13,7 @@ Update-Help
 
 # Remove OneDrive from the System
 taskkill /f /im OneDrive.exe
-%SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall
+c:\Windows\SysWOW64\OneDriveSetup.exe /uninstall
 
 # Disable SMBv1
 Set-SmbServerConfiguration -EnableSMB1Protocol $false -Confirm:$false
