@@ -16,6 +16,7 @@ Here's what this script does:
 11. Installs the Linux Subsystem
 12. Updates the Powershell Get-Help items
 13. Disables SMBv1
+14. Unpin all Start Menu items
 
 ## Installation
 Unfortunately you'll have to set your execution policy to unrestricted to use this script.
