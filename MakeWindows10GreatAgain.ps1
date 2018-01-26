@@ -18,6 +18,10 @@ c:\Windows\SysWOW64\OneDriveSetup.exe /uninstall
 # Disable SMBv1
 Set-SmbServerConfiguration -EnableSMB1Protocol $false -Confirm:$false
 
+# Remove all pinned items from Start Menu
+# https://community.spiceworks.com/topic/post/7417573
+(New-Object -Com Shell.Application).NameSpace('shell:::{4234d49b-0245-4df3-b780-3893943456e1}').Items()| foreach { ($_).Verbs() | ?{$_.Name.Replace('&', '') -match 'From "Start" UnPin|Unpin from Start'} | %{$_.DoIt()}  }
+
 # Install Linux Subsystem
 Write-Host "Installing the Linux Subsystem..."
 Enable-WindowsOptionalFeature -Online -FeatureName "Microsoft-Windows-Subsystem-Linux"
