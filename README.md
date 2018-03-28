@@ -17,6 +17,7 @@ Here's what this script does:
 12. Updates the Powershell Get-Help items
 13. Disables SMBv1
 14. Unpin all Start Menu items
+15. Disables WPAD 
 
 ## Installation
 Unfortunately you'll have to set your execution policy to unrestricted to use this script.
