@@ -43,3 +43,7 @@ Windows Registry Editor Version 5.00
 # Enable Developer Mode (prerequisite for Linux subsystem)
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock]
 "AllowDevelopmentWithoutDevLicense"=dword:00000001
+
+# Disable WPAD
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad]
+"WpadOverride"=dword:00000001
