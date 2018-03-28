@@ -25,3 +25,7 @@ Set-SmbServerConfiguration -EnableSMB1Protocol $false -Confirm:$false
 # Install Linux Subsystem
 Write-Host "Installing the Linux Subsystem..."
 Enable-WindowsOptionalFeature -Online -FeatureName "Microsoft-Windows-Subsystem-Linux"
+
+# Disable WPAD 
+# https://docs.microsoft.com/en-us/security-updates/securitybulletins/2016/ms16-077#workarounds
+Add-Content "c:\windows\system32\drivers\etc\hosts" "        255.255.255.255  wpad."
