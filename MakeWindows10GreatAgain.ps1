@@ -9,7 +9,7 @@ Write-Host "Importing registry keys..."
 regedit /s MakeWindows10GreatAgain.reg
 
 # Install Powershell Help items
-Update-Help
+Update-Help -Force -ErrorAction SilentlyContinue
 
 # Remove OneDrive from the System
 taskkill /f /im OneDrive.exe
