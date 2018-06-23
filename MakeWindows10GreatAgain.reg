@@ -47,3 +47,8 @@ Windows Registry Editor Version 5.00
 # Disable WPAD
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad]
 "WpadOverride"=dword:00000001
+
+# Disable Microsoft People icon from taskbar
+# https://technicalustad.com/remove-people-icon-from-taskbar-in-windows-10/
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
+"PeopleBand"=dword:00000000
