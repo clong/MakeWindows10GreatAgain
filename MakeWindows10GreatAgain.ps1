@@ -53,7 +53,7 @@ if ([System.Environment]::OSVersion.Version.Build -lt 19041) {
   try {
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     wsl --set-default-version 2
-    Write-Host "WSLv2 Enabled!
+    Write-Host "WSLv2 Enabled!"
   } catch {
     Write-Host "Something went wrong while updating to WSL2..."
   }
