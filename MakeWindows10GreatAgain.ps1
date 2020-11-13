@@ -1,4 +1,4 @@
-Check to see if Anniversary Update is installed
+# Check to see if Anniversary Update is installed
 if ([System.Environment]::OSVersion.Version.Build -lt 14393) {
   Write-Host "Build version 14393 or greater is required to continue. Exiting."
   Exit
