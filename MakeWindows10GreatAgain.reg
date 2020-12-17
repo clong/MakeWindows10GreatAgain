@@ -52,3 +52,7 @@ Windows Registry Editor Version 5.00
 # https://technicalustad.com/remove-people-icon-from-taskbar-in-windows-10/
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
 "PeopleBand"=dword:00000000
+
+# Disable Notifications about Security Center
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications] 
+"DisableNotifications"=dword:00000001 
